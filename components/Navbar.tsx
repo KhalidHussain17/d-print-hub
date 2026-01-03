@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -16,7 +17,7 @@ export default function Navbar() {
           >
             {/* Brand Logo */}
             <img
-              src="/logo_PNG.png"   // or /logo.svg
+              src="/logo1.png"   // or /logo.svg
               alt="D Print Hub Logo"
               className="h-8 w-auto md:h-10"
             />
