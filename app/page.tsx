@@ -1,4 +1,7 @@
 "use client";
+import HeroSlider from "@/components/HeroSlider";
+
+
 
 import { motion } from "framer-motion";
 import {
@@ -106,7 +109,8 @@ export default function Home() {
               <br />& Branding Solutions
             </motion.h1>
 
-            <p className="mt-6 text-lg text-orange-800 max-w-xl">
+            <p className="mt-6 text-lg text-gray-700 max-w-xl">
+
               From concept on screen to flawless prints in hand, we handle it end to end.
             </p>
 
@@ -138,11 +142,20 @@ export default function Home() {
           </div>
         </div>
       </motion.section>
+      {/* ================= HERO SLIDER ================= */}
+      <section className="relative">
+        <HeroSlider />
+      </section>
+
 
       {/* ================= SERVICES ================= */}
-      <section className="py-28 bg-gradient-to-b from-[#FFF5F5] to-white">
+      <section
+        id="services"
+        className="py-28 bg-gradient-to-b from-[#FFF5F5] to-white"
+      >
+
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-extrabold text-center mb-16 text-gray-900">
+          <h2 className="text-4xl font-extrabold text-center mb-12 text-gray-900">
             Our <span className="text-brand-red">Services</span>
           </h2>
 
@@ -186,12 +199,12 @@ export default function Home() {
       >
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-4xl font-extrabold text-center mb-16 text-gray-900">
-            What Our <span className="text-brand-red">Clients Say</span>
+            What Our <span className="text-brand-red">Clients Says</span>
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
             {reviews.map((review, index) => (
-              <motion.a
+              <motion.div
                 key={index}
                 href={review.link}
                 whileHover={{ y: -6, scale: 1.02 }}
@@ -206,9 +219,16 @@ export default function Home() {
                 <div className="mt-8 pt-6 border-t border-gray-200">
                   <p className="font-semibold text-gray-900">{review.name}</p>
                   <p className="text-sm text-gray-500">{review.company}</p>
-                  <p className="mt-2 text-sm text-brand-red font-medium">View Work →</p>
+                  <a
+                    href="/projects"
+                    className="mt-2 inline-block text-sm font-semibold text-red-600 hover:text-red-700 transition"
+                  >
+                    View Work →
+                  </a>
+
+
                 </div>
-              </motion.a>
+              </motion.div>
             ))}
           </div>
         </div>

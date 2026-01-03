@@ -10,12 +10,34 @@ export default function Navbar() {
         <div className="flex h-16 items-center justify-between">
 
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <img src="/logo.png" alt="D Print Hub" className="h-8 w-auto" />
-            <span className="text-xl font-extrabold text-gray-900">
-              D<span className="text-red-600">Print</span> Hub
+          <Link
+            href="/"
+            className="flex items-center gap-2 tracking-tight group"
+          >
+            {/* Brand Logo */}
+            <img
+              src="/logo_PNG.png"   // or /logo.svg
+              alt="D Print Hub Logo"
+              className="h-8 w-auto md:h-10"
+            />
+
+            {/* Brand Text */}
+            <span className="text-2xl md:text-3xl font-extrabold text-gray-900">
+              D’
+            </span>
+            <span className="text-2xl md:text-3xl font-extrabold text-red-600 group-hover:tracking-wide transition-all duration-300">
+              Print Hub
             </span>
           </Link>
+
+
+
+
+
+
+
+
+
 
           {/* Nav links */}
           <nav className="hidden md:flex items-center gap-10">
