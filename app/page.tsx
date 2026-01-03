@@ -206,11 +206,11 @@ export default function Home() {
             {reviews.map((review, index) => (
               <motion.div
                 key={index}
-                href={review.link}
                 whileHover={{ y: -6, scale: 1.02 }}
                 transition={{ type: "spring", stiffness: 180 }}
                 className="group flex flex-col justify-between bg-gray-50 rounded-3xl p-8 shadow-md hover:shadow-2xl min-h-[360px]"
               >
+
                 <div>
                   <div className="text-yellow-500 text-lg mb-4">{review.stars}</div>
                   <p className="text-gray-700 leading-relaxed">“{review.text}”</p>
