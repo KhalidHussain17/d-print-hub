@@ -5,9 +5,9 @@ export default function Projects() {
     "p1.jpeg","p2.jpeg","p3.jpeg",
     "p4.jpeg","p5.jpeg","p6.jpeg",
     "s1.jpeg","s2.jpeg","s3.jpeg",
-    "s4.jpeg","s5.jpeg","s6.jpeg",
-    "s7.jpeg","s8.jpeg","s9.jpeg",
-    "s10.jpeg","s11.jpeg","s12.jpeg",
+    "s5.jpeg","s6.jpeg","s7.jpeg",
+    "s8.jpeg","s10.jpeg","s12.jpeg",
+    
   ];
 
   const videos = [
